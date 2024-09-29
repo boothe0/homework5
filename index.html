@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Homework Assignment 5</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 class="name">Elizabeth Booth</h1>
+      <h3 class="major"><ins>Software Engineer</ins></h3>
+      <video
+        class="videoIntro"
+        controls
+        width="400"
+        height="400"
+        poster="videoCover.jpg"
+      >
+        <source src="Introduction.mp4" type="video/mp4" />
+        Intro Video
+      </video>
+      <p class="aboutMe" id="summary">
+        Hi! I am a sophmore in college at NAU majoring in Software Engineering.
+        <br />
+        I work with C and C++ as have explored both embedded systems and game
+        <br />development. Since both Raspberry Pi and Arduino can use C
+        programming <br />I have been practicing my skills with both these
+        microcontrollers. I have also <br />
+        used unitygame engine to see what is possible when combining art and
+        code together.
+      </p>
+    </div>
+    <div class="navBar">
+      <h2 class="nav-title">Navigation</h2>
+      <nav>
+        <a href="#summary" class="navButton">Summary</a>
+      </nav>
+      <nav>
+        <a href="#education" class="navButton">Education</a>
+      </nav>
+      <nav>
+        <a href="#skills" class="navButton">Skills</a>
+      </nav>
+      <nav>
+        <a href="#projects" class="navButton">Projects</a>
+      </nav>
+      <nav>
+        <a href="#contacts" class="navButton">Contacts</a>
+      </nav>
+    </div>
+
+    <div class="mainContent">
+      <div class="skills" id="skills">
+        <h4 class="skillsHeader">Skills</h4>
+        <ul class="skills" type="square">
+          <li class="cLang">C</li>
+          <li class="htmlLang">HTML</li>
+          <li class="cssLang">CSS</li>
+          <li class="pyLang">Python</li>
+          <li class="amLang">Amet</li>
+          <li class="loremLang">Lorem</li>
+          <li class="dolorLang">Dolor</li>
+        </ul>
+      </div>
+      <h4>Projects</h4>
+      <div class="projectgrid">
+        <div class="project1" id="projects">
+          <h5>MIPS Assembly Random Number Generator</h5>
+          <figure>
+            <img class="pic1" src="reportCover.png" width="25%" />
+            <figcaption><i>The project cover overview</i></figcaption>
+          </figure>
+          <p>
+            This project introduced me to lower level languages and their
+            application to <br />
+            physical electronics. MIPS uses registers which correlate to memory
+            directly <br />on the chip. I used an <sup>*</sup>algorithm which
+            simulated a random generator.
+          </p>
+          <small class="project1grp1">
+            The algorithm involved used a seed which made it look like the
+            numbers were random however,<br />
+            when using the same seed the same numbers would be the output. In
+            MIPS it is impossible to get a truely random generator.
+          </small>
+        </div>
+        <div class="project2">
+          <h5>DNA Alignment</h5>
+          <figure>
+            <img class="pic2" src="DNAproject1.png" width="25%" />
+            <figcaption><i>Main file code</i></figcaption>
+          </figure>
+          <p class="infoDNA">
+            The user is prompted to press continue in order to generate a random
+            DNA
+            <br />
+            string that is then compared with another one to test similarity.
+            This can be <br />modified to take in a file with nucleotides on it
+            to be more useful in a medical setting.
+          </p>
+        </div>
+      </div>
+
+      <h4>Euducation and Experience</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th id="education">NAU</th>
+            <th>Robothon</th>
+            <th>Unreal Engine 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-Present</td>
+            <td>Fall 2023</td>
+            <td>Spring 2023</td>
+          </tr>
+          <tr>
+            <td>Flagstaff AZ</td>
+            <td>
+              Arduino microcontrollers were used to control<br />
+              a robot through an obstacle course.
+            </td>
+            <td>Intro to basic game developemnt</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <p>
+        <a
+          href="mailto:ehb48@nau.edu?cc=name2@r
+          apidtables.com&subject=The%20subject%20of%2
+          0the%20email&body=The%20body%20of%20the
+          %20email"
+        >
+          Email
+        </a>
+      </p>
+      <p>
+        <a class="link" href="calto:5207717955"> Phone Number </a>
+      </p>
+      <p>
+        <a
+          class="link"
+          href="https://www.linkedin.com/in/elizabeth-booth/"
+          target="_blank"
+          >Linkedin</a
+        >
+      </p>
+      <p id="contacts">
+        <a class="link" href="https://github.com/boothe0" target="_blank"
+          >Github</a
+        >
+      </p>
+      <p>
+        <a
+          class="button"
+          target="_blank"
+          href="https://docs.google.com/document/d/1Wsr52St7GW_aupO6qJfTLLu6takmB9IM/edit?usp=sharing&ouid=114404649910397077826&rtpof=true&sd=true"
+        >
+          <strong>Resume Link to Download</strong>
+        </a>
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,342 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #bfc3ba;
+}
+th {
+  color: #2f2235;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+}
+td,
+th {
+  padding: 10px;
+}
+
+li {
+  margin: 20px;
+}
+
+.name {
+  min-height: 100%;
+  grid-area: name;
+}
+
+.header,
+.mainContent,
+.navBar,
+.footer {
+  color: #3f3244;
+}
+.header {
+  grid-area: header;
+}
+
+.navBar {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 20px;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.mainContent {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  position: fixed;
+}
+
+.navButton {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 35px;
+  background-color: #78866b;
+  width: 100px;
+  border-width: 5px;
+}
+.nav-title {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 8px;
+}
+.header {
+  display: grid;
+  grid-template-areas:
+    "name videoIntro"
+    "major aboutMe";
+}
+
+.aboutMe {
+  font-size: 20px;
+  padding: 100px;
+  margin: 0px;
+}
+
+.major {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.pic1:hover {
+  width: 50%;
+}
+.pic1,
+.pic2 {
+  float: left;
+  padding-right: 20px;
+  transition: 0.15s;
+}
+.pic2:hover {
+  width: 50%;
+}
+.pic2 {
+  transition: 0.15s;
+}
+
+.skills {
+  display: grid;
+  grid-template-areas:
+    ". c c "
+    "HTML python CSS"
+    "amLang loremLang dolorLang";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.cLang {
+  grid-area: c;
+  font-size: 20px;
+  font-weight: bold;
+}
+.htmlLang {
+  grid-area: HTML;
+}
+.cssLang {
+  grid-area: CSS;
+}
+.pyLang {
+  grid-area: python;
+}
+.amLang {
+  grid-area: amLang;
+}
+.loremLang {
+  grid-area: loremLang;
+}
+.dolorLang {
+  grid-area: dolorLang;
+}
+
+.projectgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project1,
+.project2 {
+  padding: 10px;
+}
+
+.project1 p,
+.project2 p {
+  margin: 30px;
+  margin-left: 0px;
+}
+
+.footer {
+  position: relative;
+  left: 100px;
+  top: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.link {
+  margin: 10px;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to left,
+    #9ec5ab,
+    #32746d 30%,
+    #104f55 100%
+  );
+  transition: 0.15s;
+  background-size: 200% auto;
+}
+
+.button:visited {
+  color: #bfc3ba;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 5px rgb(44, 44, 44);
+  background-position: right center;
+}
+.cLang,
+.htmlLang,
+.cssLang,
+.pyLang,
+.amLang,
+.loremLang,
+.dolorLang {
+  transition: 0.15s;
+}
+.cLang:hover,
+.htmlLang:hover,
+.cssLang:hover,
+.pyLang:hover,
+.amLang:hover,
+.loremLang:hover,
+.dolorLang:hover {
+  scale: 1.5;
+  color: #627754;
+}
+.skillsHeader:hover {
+  transform: rotate(6.142rad);
+}
+.skillsHeader {
+  transition: 0.15s;
+}
+
+@media (max-width: 780px) {
+  .aboutMe {
+    padding: 53px;
+    font-size: 15px;
+  }
+  .major {
+    margin: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    grid-template-areas:
+      "nav nav nav nav"
+      "header header header"
+      "main main main"
+      "footer footer footer";
+    grid-template-columns: 20px 1fr 1fr 1fr;
+  }
+  .videoIntro {
+    padding-left: 15px;
+  }
+  .navBar {
+    font-size: 10px;
+    margin-top: 50px;
+    margin-left: 20px;
+    justify-content: start;
+  }
+  .navButton {
+    width: 80px;
+    margin: 10px;
+  }
+
+  .header {
+    grid-template-areas:
+      " name name"
+      " major major"
+      " aboutMe aboutMe"
+      "videoIntro videoIntro ";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .major {
+    grid-area: major;
+    padding-left: 50px;
+  }
+  .videoIntro {
+    grid-area: videoIntro;
+  }
+
+  .aboutMe {
+    width: 75%;
+    grid-area: aboutMe;
+    margin-left: 50px;
+  }
+  .footer {
+    left: 30px;
+  }
+  .pic1,
+  .pic2 {
+    width: 100%;
+  }
+  .pic2 {
+    padding-top: 20px;
+  }
+  .pic1:hover,
+  .pic2:hover {
+    width: 150%;
+  }
+  .infoDNA {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .aboutMe {
+    padding: 30px;
+    font-size: 15px;
+  }
+  .footer {
+    left: 30px;
+  }
+  .pic1,
+  .pic2 {
+    width: 100%;
+  }
+  .pic2 {
+    padding-top: 20px;
+  }
+  .pic1:hover,
+  .pic2:hover {
+    width: 150%;
+  }
+  .infoDNA {
+    padding-top: 40px;
+  }
+}
+.navbutton {
+  color: white;
+}
+
+.navbutton {
+  color: white;
+}
